@@ -1,0 +1,16 @@
+{
+  "name": "demoqa-cypress-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "cypress run --spec 'cypress/e2e/*.cy.js'",
+    "test:headed": "cypress run --headed --spec 'cypress/e2e/*.cy.js'",
+    "test:open": "cypress open"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

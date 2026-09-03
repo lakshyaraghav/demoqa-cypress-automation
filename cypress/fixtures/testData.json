@@ -1,0 +1,82 @@
+{
+    "userDetails": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "testdata123@gmail.com",
+        "genders": "Female",
+        "mobile": "1234567890",
+        "dob": {
+            "day": "30",
+            "month": "May",
+            "year": "1990"
+        },
+        "subjects": [
+            "Maths",
+            "Physics",
+            "Chemistry"
+        ],
+        "hobbies": [
+            "Sports",
+            "Reading"
+        ],
+        "imagePath": "cypress/fixtures/testDemoFiles/470kb_test.pdf",
+        "address": "123 Main St, Anytown, USA",
+        "state": "NCR",
+        "city": "Delhi"
+    },
+    "invalidData": {
+        "invalidEmail": "testdata123",
+        "invalidMobile": "9778"
+    },
+
+    "mandatoryFieldCases": [
+    {
+        "description": "all mandatory fields valid",
+        "firstName": "John",
+        "lastName": "Doe",
+        "genders": "Male",
+        "mobile": "9876543210",
+        "expected": "pass"
+    },
+    {
+        "description": "firstName missing",
+        "firstName": "",
+        "lastName": "Doe",
+        "genders": "Male",
+        "mobile": "9876543210",
+        "expected": "fail"
+    },
+    {
+        "description": "lastName missing",
+        "firstName": "John",
+        "lastName": "",
+        "genders": "Male",
+        "mobile": "9876543210",
+        "expected": "fail"
+    },
+    {
+        "description": "gender not selected",
+        "firstName": "John",
+        "lastName": "Doe",
+        "genders": "",
+        "mobile": "9876543210",
+        "expected": "fail"
+    },
+    {
+        "description": "mobile invalid",
+        "firstName": "John",
+        "lastName": "Doe",
+        "genders": "Male",
+        "mobile": "123B",
+        "expected": "fail"
+    },
+    {
+        "description": "mobile missing",
+        "firstName": "John",
+        "lastName": "Doe",
+        "genders": "Male",
+        "mobile": "",
+        "expected": "fail"
+    }
+]
+}
