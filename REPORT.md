@@ -26,13 +26,13 @@ Each page has its own Page Object that owns all selectors and exposes small, nam
 
        Spec                                              Tests  Passing  Failing  Pending  Skipped  
   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │ ✔  dialogs.cy.js                            00:27        5        5        -        -        - │
+  │ ✔  dialogs.cy.js                            00:19        5        5        -        -        - │
   ├────────────────────────────────────────────────────────────────────────────────────────────────┤
-  │ ✖  form.cy.js                               02:04       19       18        1        -        - │
+  │ ✔  form.cy.js                               00:32       19       19        -        -        - │
   ├────────────────────────────────────────────────────────────────────────────────────────────────┤
-  │ ✔  selectable.cy.js                         01:27        8        8        -        -        - │
+  │ ✔  selectable.cy.js                         00:19        8        8        -        -        - │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
-    ✖  1 of 3 failed (33%)                      04:00       32       31        1        -        -  
+    ✔  All specs passed!                        01:11       32       32        -        -        -  
 
 A sample terminal run and Cypress-generated videos are included as artifacts. Screenshots are auto-captured for any failing test.
 
@@ -49,8 +49,3 @@ The main source of flakiness on this site is the rotating ad banner near the bot
 - A few minor/cosmetic issues (character limit on the address field, layout glitch when clearing the date field) were documented but not automated, since they're either low-impact or hard to assert reliably through the DOM. I prioritized automating the defects that affect core functionality.
 
 
-## Recommendations for next steps
-
-- **CI/CD**: run `npm test` on every push via GitHub Actions, upload
-  `cypress/screenshots` and `cypress/videos` as build artifacts so failures
-  are easy to inspect without re-running locally.

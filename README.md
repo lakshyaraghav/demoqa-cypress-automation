@@ -85,3 +85,15 @@ We also saw the ad scripts occasionally throw their own JavaScript errors, unrel
 
 - Tests run against the live public demoqa.com site, so results depend on that site being up and its ad scripts not changing.
 - A few defects found manually (see DEFECTS.md) were not automated becausethey're hard to assert reliably through the DOM (e.g. visual layout glitches) - these are documented instead.
+
+
+# Run Tests Using GitHub Actions
+
+The test suite can also be executed automatically using GitHub Actions.
+
+Steps: 
+1: Open the GitHub repository: lakshyaraghav/demoqa-cypress-automation
+2: Go to the Actions tab.
+3: Select the Cypress Tests workflow from the left side.
+4: The workflow runs automatically whenever code is pushed to the main branch or a Pull Request is created.
+5: Cick on rerun any workflow
