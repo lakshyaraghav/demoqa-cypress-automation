@@ -57,7 +57,7 @@ class Formpage {
     enterSubjects(subject) {
 
         subject.forEach((sub) => {
-            this.elements.subjectsInput().type(sub + '{enter}');
+            this.elements.subjectsInput().type(sub).type('{enter}');
         })
 
     }
